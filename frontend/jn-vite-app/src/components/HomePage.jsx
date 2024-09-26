@@ -16,12 +16,17 @@ const HomePage = () => {
     useEffect(() => {
         axios.get('http://127.0.0.1:5000/api/home')  // Call the Flask API to get all sections data
             .then(response => {
+                console.log("Home Data: ", response.data);  // Log the response to verify the structure
                 setHomeData(response.data);  // Store the fetched data in state
             })
             .catch(error => {
                 console.error('There was an error fetching the home data!', error);
             });
     }, []);
+
+    if (!homeData) {
+        return <div>Loading...</div>;
+    }
 
     // Render the sections if the data is available, otherwise show a loading message
     return (

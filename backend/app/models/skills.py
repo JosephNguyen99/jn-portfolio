@@ -8,5 +8,6 @@ class Skill(db.Model):
 
     def as_dict(self):
         return {
+            "id": self.id,
             "name": self.name
         }

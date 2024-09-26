@@ -2,6 +2,10 @@
 import React from 'react';
 
 const AboutMe = ({ data }) => {
+    if (!data || Object.keys(data).length === 0) {
+        return <p>No About Me data available.</p>;
+    }
+
     return (
         <div>
             <h1>About Me</h1>

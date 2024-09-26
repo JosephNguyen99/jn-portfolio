@@ -2,12 +2,16 @@
 import React from 'react';
 
 const Skills = ({ data }) => {
+    if (!data || data.length === 0) {
+        return <p>No Skills available.</p>;
+    }
+
     return (
         <div>
-            <h2>Skills</h2>
+            <h1>Skills</h1>
             <ul>
-                {data.map((skill, index) => (
-                    <li key={index}>{skill.name}</li>
+                {data.map(skill => (
+                    <li key={skill.id}>{skill.name}</li>
                 ))}
             </ul>
         </div>

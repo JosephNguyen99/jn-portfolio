@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css';  // Optional: include your styling
+import App from './App';  // Case-sensitive and correct path
+import './styles/index.css';  // Ensure the styles directory and file exists
 
-// ReactDOM.createRoot is how we initialize the app and render it
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <App />
     </React.StrictMode>
 );
+
