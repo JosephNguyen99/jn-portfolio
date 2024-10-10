@@ -9,5 +9,6 @@ class Skill(db.Model):
     def as_dict(self):
         return {
             "id": self.id,
-            "name": self.name
+            "name": self.name,
+            "work_experiences": [work.job_title for work in self.experiences]  # Can include work experiences if needed
         }

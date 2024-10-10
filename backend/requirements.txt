@@ -1,0 +1,6 @@
+pymysql
+flask-sqlalchemy
+flask
+pymongo
+flask-pymongo
+flask-cors
