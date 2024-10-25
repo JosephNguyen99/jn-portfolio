@@ -2,8 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+
+// App components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
+import Stats from "@/components/Stats";
 // import IconTest from "@/components/IconTest";
 
 const Home = () => {
@@ -23,14 +26,19 @@ const Home = () => {
             </p>
             {/* Button and Icons */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="uppercase flex items-center gap-2"
+              <a
+                href="/Resume_Joseph_Nguyen_WIP.pdf"  // path to resume pdf
+                download="JosephNguyen_Resume.pdf"  // suggest file name
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               
               {/* Social Component */}
               <div className="mb-8 xl:mb-0">
@@ -49,6 +57,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Stats Container */}
+      <Stats />
     </section>
   );
 };
