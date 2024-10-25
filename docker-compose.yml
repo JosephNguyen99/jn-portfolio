@@ -1,0 +1,26 @@
+# # environment if need access to database services
+# version: '3'
+# services:
+#   app:
+#     build: .
+#     ports:
+#       - "3000:3000"
+#     volumes:
+#       - .:/app
+#       - /app/node_modules
+#     environment:
+#       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+#       - DATABASE_URL=${DATABASE_URL}
+
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+
