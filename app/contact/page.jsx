@@ -22,7 +22,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Deez",
+    description: "Are you stalking me?",
   },
 ]
 
@@ -44,14 +44,14 @@ const Contact = () => {
           {/* form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Connect with me</h3>
               <p className="text-white/60">
-               Lorem, Ipsem deez nutz.
+               Feel free to connect with me and ask me any questions! I'm an open book :)
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
+                <Input type="firstname" placeholder="First name" />
+                <Input type="lastname" placeholder="Last name" />
                 <Input type="email" placeholder="Email address" />
                 <Input type="phone" placeholder="Phone number" />
               </div>

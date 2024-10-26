@@ -11,17 +11,17 @@ const links = [
     name: 'home',
     path: '/'
   },
+  // {
+  //   name: 'services',
+  //   path: '/services'
+  // },
   {
-    name: 'services',
-    path: '/services'
+    name: 'about me',
+    path: '/about'
   },
   {
-    name: 'resume',
-    path: '/resume'
-  },
-  {
-    name: 'work',
-    path: '/work'
+    name: 'projects',
+    path: '/projects'
   },
   {
     name: 'contact',

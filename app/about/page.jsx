@@ -8,7 +8,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur deez nutz.",
+    "A lil gauge about my life",
   info: [
     {
       fieldName: "Name",
@@ -76,7 +76,7 @@ const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
   description:
-    "Lorem ipsum dolor sit amet consectetur deez nutz.",
+    "I received my Bachelor of Science in Computer Engineering and Minor in Computer Science from Wichita State University. Throughout my undergrad, I've had relevant courseworks such as C++ Programming, Data Structures & Algorithms, Object-Oriented Programming, Hardware-based Security Engineering, Microprocessor-based system design, and Linear Algebra...",
   items: [
     {
       institution: "Wichita State University",
@@ -105,7 +105,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur deez nutz.",
+    "I have honed all of these following skills throughout my experience as an ungraduate student to my current professional career. I plan to deepen my expertise with modern technologies such as cloud, automation, AI, and web development",
   skillList: [
     {
       icon: <FaHtml5 />,
