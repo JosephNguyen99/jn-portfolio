@@ -1,0 +1,43 @@
+/*  jn-portfolio/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* @layer base {
+  body {
+    @apply font-primary;
+    font-family: var(--font-jetbrainsMono), sans-serif;
+  }
+} */
+
+/* html, body {
+  font-family: var(--font-jetbrainsMono), sans-serif;
+} */
+
+/* This is combined of adding both solutions to have custom font accessible everywhere in a broad scope */
+@layer base {
+  html, body {
+    @apply font-primary bg-primary text-white leading-loose; /* Applies the primary font class defined in Tailwind */
+    font-family: var(--font-jetbrainsMono), sans-serif; /* Ensures the fallback if the variable is not resolved */
+  }
+
+  .h1 {
+    @apply text-[40px] xl:text-[60px] leading-[1.1] font-semibold; /* changed from 48px and 80px to this*/
+  }
+
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+}
+
+.experience-section {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
