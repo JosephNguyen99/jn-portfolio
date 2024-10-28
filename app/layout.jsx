@@ -21,15 +21,22 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata = {
   title: "josephnguyen.portfolio",
-  description: "My portfolio project showcasing my interest, hobbies, passion, and experiences!",
+  description: "My portfolio project showcasing my interests, hobbies, passion, and experiences!",
+  openGraph: {
+    title: "Joseph Nguyen's Portfolio",
+    description: "Explore Joseph's portfolio showcasing skills, experiences, and projects in software engineering.",
+    url: "https://josephnguyen.vercel.app/", // Replace with your actual URL
+    images: [
+      {
+        url: "https://josephnguyen.vercel.app/public/assets/IMG_8826.png", // Use an absolute path for the image you want as the preview
+        width: 1200,
+        height: 630,
+        alt: "Joseph Nguyen's Portfolio Thumbnail",
+      },
+    ],
+    type: "website",
+  },
 };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body className={jetbrainsMono.variable}>{children}</body>
-//     </html>
-//   );
 
 export default function RootLayout({ children }) {
   return (
