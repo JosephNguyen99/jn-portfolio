@@ -2,12 +2,12 @@
 "use client";
 
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/JosephNguyen99" },
   { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/qt-joseph-nguyen/" },
-  { icon: <FaYoutube />, path: "https://www.youtube.com/@josephqtnguyen" },
+  { icon: <FaInstagram />, path: "https://www.instagram.com/josephqtnguyen/" },
 ];
 
 const Social = ({ containerStyles = "", iconStyles = "" }) => { // default values ensure for containerStyles / iconStyles to use empty string rather than undefined
