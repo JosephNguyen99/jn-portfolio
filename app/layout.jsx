@@ -25,17 +25,18 @@ export const metadata = {
   openGraph: {
     title: "Joseph Nguyen's Portfolio",
     description: "Explore Joseph's portfolio showcasing skills, experiences, and projects in software engineering.",
-    url: "https://josephnguyen.vercel.app", // Your actual URL
+    url: "https://josephnguyen.vercel.app",
     images: [
       {
-        url: "https://josephnguyen.vercel.app/assets/IMG_8826.png", // Corrected path without /public
+        url: "https://josephnguyen.vercel.app/assets/IMG_8826.png",
         width: 1200,
         height: 630,
         alt: "Joseph Nguyen's Portfolio Thumbnail",
       },
     ],
+    site_name: "Joseph Nguyen's Portfolio",  // Adding the site name here
     type: "website",
-  },  
+  },
 };
 
 export default function RootLayout({ children }) {
