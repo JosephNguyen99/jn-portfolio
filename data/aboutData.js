@@ -65,7 +65,7 @@ export const about = {
 
 // skills data
 export const skills = {
-  title: "My Skills",
+  title: "My skills",
   description:
     "Throughout my academic and professional journey, I have developed a robust skill set in various areas, from core programming to cloud technologies and project management. I continue to expand my expertise in modern technologies, particularly in cloud, automation, AI, and web development.",
   categories: [
@@ -88,7 +88,7 @@ export const skills = {
         { icon: <FaCss3 />, name: "CSS 3" },
         { icon: <FaReact />, name: "React" },
         { icon: <SiNextdotjs />, name: "Next.js" },
-        { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+        // { icon: <SiTailwindcss />, name: "Tailwind CSS" },
         
       ],
     },
@@ -102,19 +102,20 @@ export const skills = {
         { icon: <SiIbm />, name: "IBM DOORs" },
       ],
     },
-    {
-      category: "DevOps & Cloud",
-      skills: [
-        { icon: <FaAws />, name: "AWS" },
-        { icon: <SiMicrosoftazure />, name: "Azure" },
-        { icon: <FaDocker />, name: "Docker" },
-        { icon: <SiJenkins />, name: "Jenkins" },
+    // {
+    //   category: "DevOps & Cloud",
+    //   skills: [
+    //     { icon: <FaAws />, name: "AWS" },
+    //     { icon: <SiMicrosoftazure />, name: "Azure" },
+    //     { icon: <FaDocker />, name: "Docker" },
+    //     { icon: <SiJenkins />, name: "Jenkins" },
         
-      ],
-    },
+    //   ],
+    // },
     {
       category: "Project Management & Collaboration",
       skills: [
+        { icon: <SiMicrosoftazure />, name: "Azure" },
         { icon: <SiAzuredevops />, name: "Azure DevOps" },
         { icon: <FaJira />, name: "Jira" },
         { icon: <FaSlack />, name: "Slack" },
@@ -129,43 +130,6 @@ export const skills = {
       ],
     },
   ],
-  // title: "My skills",
-  // description:
-  //   "I have honed all of these following skills throughout my experience as an undergraduate student to my current professional career. I plan to deepen my expertise with modern technologies such as cloud, automation, AI, and web development",
-  // skillList: [
-  //   {
-  //     icon: <FaHtml5 />,
-  //     name: "html 5",
-  //   },
-  //   {
-  //     icon: <FaCss3/>,
-  //     name: "css 3",
-  //   },
-  //   {
-  //     icon: <FaJs />,
-  //     name: "javascript",
-  //   },
-  //   {
-  //     icon: <FaFigma />,
-  //     name: "figma",
-  //   },
-  //   {
-  //     icon: <FaReact/>,
-  //     name: "react",
-  //   },
-  //   {
-  //     icon: <FaNodeJs/>,
-  //     name: "nodejs",
-  //   },
-  //   {
-  //     icon: <SiNextdotjs />,
-  //     name: "nextjs",
-  //   },
-  //   {
-  //     icon: <SiTailwindcss />,
-  //     name: "tailwind.css",
-  //   },
-  // ]
 };
 
 // experience data
@@ -253,7 +217,7 @@ export const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
   description:
-    "I received my Bachelor of Science in Computer Engineering and Minor in Computer Science from Wichita State University. Throughout my undergrad, I've had relevant courseworks such as C++ Programming, Data Structures & Algorithms, Object-Oriented Programming, Hardware-based Security Engineering, Microprocessor-based system design, and Linear Algebra...",
+    "I received my Bachelor of Science in Computer Engineering and Minor in Computer Science from Wichita State University. Throughout my undergrad, I've had relevant courseworks such as C++ Programming, Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Computer Architecture, Intro to Software Engineering,  Hardware-based Security Engineering, Microprocessor-based system design, and many more...",
   items: [
     {
       institution: "Wichita State University",

@@ -21,7 +21,7 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Joseph Nguyen</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 mx-auto xl:mx-0">
-              I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.
+              I excel at crafting impactful relationships through business needs to produce efficient results with mutual benefit.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a

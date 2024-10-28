@@ -30,13 +30,13 @@ const SkillCard = ({ category, skillList }) => (
 const Skills = () => {
   return (
     <TabsContent value="skills" className="w-full h-full">
-      <div className="flex flex-col gap-8">
-        <div className="text-center xl:text-left">
+      <div className="flex flex-col gap-[30px] text-center xl:text-left">
+        {/* <div className="text-center xl:text-left"> */}
           <h3 className="text-4xl font-bold">{skills.title}</h3>
           <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
             {skills.description}
           </p>
-        </div>
+        {/* </div> */}
         <ScrollArea className="max-h-[500px] overflow-y-scroll p-4 bg-[#232329] rounded-xl space-y-6">
           {skills.categories.map((categoryData, index) => (
             <SkillCard
