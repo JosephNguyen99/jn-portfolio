@@ -25,15 +25,16 @@ export const metadata = {
   openGraph: {
     title: "Joseph Nguyen's Portfolio",
     description: "Explore Joseph's portfolio showcasing skills, experiences, and projects in software engineering.",
-    url: "https://josephnguyen.vercel.app/", // Replace with your actual URL
+    url: "https://josephnguyen.vercel.app",
     images: [
       {
-        url: "https://josephnguyen.vercel.app/public/assets/IMG_8826.png", // Use an absolute path for the image you want as the preview
+        url: "https://josephnguyen.vercel.app/assets/IMG_8826.png",
         width: 1200,
         height: 630,
         alt: "Joseph Nguyen's Portfolio Thumbnail",
       },
     ],
+    site_name: "Joseph Nguyen's Portfolio",  // Adding the site name here
     type: "website",
   },
 };
@@ -41,6 +42,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jetbrainsMono.variable}>
+      <head>
+        <title>Joseph Nguyen's Portfolio</title>
+        <meta property="og:title" content="Joseph Nguyen's Portfolio" />
+        <meta property="og:description" content="Explore Joseph's portfolio showcasing skills, experiences, and projects in software engineering." />
+        <meta property="og:url" content="https://josephnguyen.vercel.app" />
+        <meta property="og:image" content="https://josephnguyen.vercel.app/assets/IMG_8826.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Joseph Nguyen's Portfolio" /> {/* Explicitly set */}
+      </head>
       <body>
         {/* differences between <header /> vs <header><header/> */}
         <Header />
