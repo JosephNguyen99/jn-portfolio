@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [frontend-vercel]
+    branches: [frontend-vercel, dev]  # Triggers on pushes to both frontend-vercel and dev
   pull_request:
-    branches: [dev]
+    branches: [dev]                   # Triggers on pull requests targeting dev
 
 jobs:
   build:
@@ -19,4 +19,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run lint
-      - run: npm test # Potentially remove npm test since we don;t have a test script. Bypassed in package.json with placeholder no test scripts
+      - run: npm test # Potentially remove npm test if not applicable
