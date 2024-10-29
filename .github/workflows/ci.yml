@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [v3-portfolio]
+    branches: [frontend-vercel, dev]  # Triggers on pushes to both frontend-vercel and dev
   pull_request:
-    branches: [v3-portfolio]
+    branches: [dev]                   # Triggers on pull requests targeting dev
 
 jobs:
   build:
@@ -19,4 +19,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm run lint
-      - run: npm test
+      - run: npm test # Potentially remove npm test if not applicable
