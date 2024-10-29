@@ -55,6 +55,9 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content="Joseph Nguyen's Portfolio" />
         <meta name="twitter:description" content="Explore Joseph's portfolio showcasing skills, experiences, and passion in software engineering." />
         <meta name="twitter:image" content="https://josephnguyen.vercel.app/assets/IMG_8826.png" />
+
+        {/* Apple Touch Icon */}
+        <link rel="apple-touch-icon" href="https://josephnguyen.vercel.app/assets/IMG_8826.png" />
       </head>
       <body>
         <Header />
