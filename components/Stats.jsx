@@ -13,8 +13,9 @@ const stats = [
     text: "Projects completed",
   },
   {
-    num: 8,
-    text: "Technologies mastered",
+    num: 60,
+    text: "hrs/week continued learning",
+    addPlus: true, // Adding a custom flag for "+" sign
   },
   {
     num: 150,
