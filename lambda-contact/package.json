@@ -1,0 +1,19 @@
+{
+  "name": "lambda-contact",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.699.0",
+    "@sendgrid/mail": "^8.1.4",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security"
+  }
+}
