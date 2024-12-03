@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "20": "^3.1.9",
+    "20": "^1.0.0",
     "@aws-sdk/client-dynamodb": "^3.699.0",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-scroll-area": "^1.2.1",
